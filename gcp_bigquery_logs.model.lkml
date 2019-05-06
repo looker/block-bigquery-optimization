@@ -1,4 +1,4 @@
-connection: "looker_app"
+connection: "@{CONNECTION_NAME}"
 
 include: "*.view.lkml"         # include all views in this project
 include: "bigquery_audit.dashboard.lookml"  # include all dashboards in this project
