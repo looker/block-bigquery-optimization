@@ -4,7 +4,7 @@ view: bigquery_data_access {
       SELECT
         *
       FROM
-        `@{AUDIT_LOG_EXPORT_SCHEMA_NAME}.@{AUDIT_LOG_EXPORT_TABLE_NAME}`
+        `@{SCHEMA_NAME}.@{AUDIT_LOG_EXPORT_TABLE_NAME}`
       WHERE
         {% condition date_filter %} PARSE_TIMESTAMP('%E4Y%m%d', _TABLE_SUFFIX) {% endcondition %} ;;
   }

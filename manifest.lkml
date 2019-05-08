@@ -4,7 +4,7 @@ constant: CONNECTION_NAME {
   value: "looker_app"
 }
 
-constant: AUDIT_LOG_EXPORT_SCHEMA_NAME {
+constant: SCHEMA_NAME {
   value: "looker_app_audit_log"
 }
 
