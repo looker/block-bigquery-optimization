@@ -1,4 +1,4 @@
-view: bigquery_data_access {
+view: bigquery_data_access_core {
   derived_table: {
     sql:
       SELECT
@@ -122,7 +122,7 @@ view: bigquery_data_access {
   }
 }
 
-view: bigquery_data_access_resource {
+view: bigquery_data_access_resource_core {
   dimension: labels {
     hidden: yes
     sql: ${TABLE}.labels ;;
@@ -135,7 +135,7 @@ view: bigquery_data_access_resource {
   }
 }
 
-view: bigquery_data_access_resource_labels {
+view: bigquery_data_access_resource_labels_core {
   dimension: project_id {
     view_label: "BigQuery Data Access"
     type: string
@@ -143,7 +143,7 @@ view: bigquery_data_access_resource_labels {
   }
 }
 
-view: bigquery_data_access_http_request {
+view: bigquery_data_access_http_request_core {
   dimension: cache_fill_bytes {
     type: number
     sql: ${TABLE}.cacheFillBytes ;;
@@ -220,7 +220,7 @@ view: bigquery_data_access_http_request {
   }
 }
 
-view: bigquery_data_access_source_location {
+view: bigquery_data_access_source_location_core {
   dimension: file {
     type: string
     sql: ${TABLE}.file ;;
@@ -237,7 +237,7 @@ view: bigquery_data_access_source_location {
   }
 }
 
-view: bigquery_data_access_operation {
+view: bigquery_data_access_operation_core {
   dimension: id {
     primary_key: yes
     type: string
@@ -260,7 +260,7 @@ view: bigquery_data_access_operation {
   }
 }
 
-view: bigquery_data_access_request_metadata {
+view: bigquery_data_access_request_metadata_core {
   dimension: caller_ip {
     type: string
     sql: ${TABLE}.callerIp ;;
@@ -272,7 +272,7 @@ view: bigquery_data_access_request_metadata {
   }
 }
 
-view: bigquery_data_access_authentication_info {
+view: bigquery_data_access_authentication_info_core {
   dimension: authority_selector {
     hidden: yes
     type: string
@@ -303,7 +303,7 @@ view: bigquery_data_access_authentication_info {
   }
 }
 
-view: bigquery_data_authorization_info {
+view: bigquery_data_authorization_info_core {
   dimension: granted {
     type: yesno
     sql: ${TABLE}.granted ;;
@@ -320,7 +320,7 @@ view: bigquery_data_authorization_info {
   }
 }
 
-view: bigquery_data_access_payload {
+view: bigquery_data_access_payload_core {
   dimension: authentication_info {
     hidden: yes
     sql: ${TABLE}.authenticationInfo ;;
@@ -367,7 +367,7 @@ view: bigquery_data_access_payload {
   }
 }
 
-view: bigquery_data_access_table_data_list_request {
+view: bigquery_data_access_table_data_list_request_core {
   dimension: max_results {
     type: number
     sql: ${TABLE}.maxResults ;;
@@ -379,7 +379,7 @@ view: bigquery_data_access_table_data_list_request {
   }
 }
 
-view: bigquery_data_access_job_completed_event {
+view: bigquery_data_access_job_completed_event_core {
   dimension: event_name {
     type: string
     sql: ${TABLE}.eventName ;;
@@ -391,7 +391,7 @@ view: bigquery_data_access_job_completed_event {
   }
 }
 
-view: bigquery_data_access_job_name {
+view: bigquery_data_access_job_name_core {
   dimension: job_id {
     type: string
     sql: ${TABLE}.jobId ;;
@@ -403,7 +403,7 @@ view: bigquery_data_access_job_name {
   }
 }
 
-view: bigquery_data_access_job_status {
+view: bigquery_data_access_job_status_core {
   dimension: error {
     hidden: yes
     sql: ${TABLE}.error ;;
@@ -420,7 +420,7 @@ view: bigquery_data_access_job_status {
 }
 }
 
-view: bigquery_data_access_job_status_error {
+view: bigquery_data_access_job_status_error_core {
   dimension: code {
     type: number
     sql: ${TABLE}.code ;;
@@ -433,7 +433,7 @@ view: bigquery_data_access_job_status_error {
 
 }
 
-view: bigquery_data_access_job_statistics {
+view: bigquery_data_access_job_statistics_core {
   dimension: billing_tier {
     type: number
     sql: ${TABLE}.billingTier ;;
@@ -623,7 +623,7 @@ view: bigquery_data_access_job_statistics {
   }
 }
 
-view: bigquery_data_access_job_configuration {
+view: bigquery_data_access_job_configuration_core {
   dimension: dry_run {
     type: yesno
     sql: ${TABLE}.dryRun ;;
@@ -635,7 +635,7 @@ view: bigquery_data_access_job_configuration {
   }
 }
 
-view: bigquery_data_access_query_destination_table {
+view: bigquery_data_access_query_destination_table_core {
   dimension: dataset_id {
     type: string
     sql: ${TABLE}.datasetId ;;
@@ -652,7 +652,7 @@ view: bigquery_data_access_query_destination_table {
   }
 }
 
-view: bigquery_data_access_query_table_definitions {
+view: bigquery_data_access_query_table_definitions_core {
   dimension: name {
     type: string
     sql: ${TABLE}.name ;;
@@ -664,7 +664,7 @@ view: bigquery_data_access_query_table_definitions {
   }
 }
 
-view: bigquery_data_access_query {
+view: bigquery_data_access_query_core {
   dimension: create_disposition {
     type: string
     sql: ${TABLE}.createDisposition ;;
@@ -696,7 +696,7 @@ view: bigquery_data_access_query {
   }
 }
 
-view: bigquery_data_access_query_default_dataset {
+view: bigquery_data_access_query_default_dataset_core {
   dimension: dataset_id {
     type: string
     sql: ${TABLE}.datasetId ;;
@@ -708,7 +708,7 @@ view: bigquery_data_access_query_default_dataset {
   }
 }
 
-view: bigquery_data_access_protopayload_auditlog_status {
+view: bigquery_data_access_protopayload_auditlog_status_core {
   dimension: code {
     type: number
     sql: ${TABLE}.code ;;
@@ -720,7 +720,7 @@ view: bigquery_data_access_protopayload_auditlog_status {
   }
 }
 
-view: bigquery_data_access_servicedata {
+view: bigquery_data_access_servicedata_core {
   dimension: job_completed_event {
     hidden: yes
     sql: ${TABLE}.jobCompletedEvent ;;
@@ -763,7 +763,7 @@ view: bigquery_data_access_servicedata {
 }
 
 
-view: bigquery_data_access_job {
+view: bigquery_data_access_job_core {
   dimension: job_configuration {
     hidden: yes
     sql: ${TABLE}.jobConfiguration ;;

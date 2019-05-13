@@ -1,11 +1,9 @@
-connection: "@{CONNECTION_NAME}"
+include: "bigquery_data_access_core.view.lkml"
 
-include: "*.view.lkml"         # include all views in this project
-include: "bigquery_audit.dashboard.lookml"  # include all dashboards in this project
-
-explore: bigquery_data_access {
+explore: bigquery_data_access_core {
   view_label: "BigQuery Data Access"
   label: "BigQuery Data Access Logs"
+  extension: required
 
   always_filter: {
     filters: {
