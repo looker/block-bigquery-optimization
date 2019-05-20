@@ -54,14 +54,14 @@
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: 5,
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: bigquery_data_access_protopayload_auditlog_servicedata_v1_bigquery_job_completed_event_job_job_statistics.total_query_cost,
             name: 'BigQuery Data Access: Query Statistics Total Query Cost', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 68}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 56}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
+            __LINE_NUM: 55}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 53}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: 5, type: linear, unpinAxis: false, valueFormat: !!null '',
         series: [{id: bigquery_data_access.number_of_queries, name: 'BigQuery Data
               Access: Query Statistics Number of Queries', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 82}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 70}]
+            __LINE_NUM: 61}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 58}]
     column_spacing_ratio:
     column_group_spacing_ratio:
     listen:
@@ -124,14 +124,14 @@
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: 5,
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: bigquery_data_access_protopayload_auditlog_servicedata_v1_bigquery_job_completed_event_job_job_statistics.total_query_cost,
             name: 'BigQuery Data Access: Query Statistics Total Query Cost', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 157}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 145}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
+            __LINE_NUM: 125}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 123}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: 5, type: linear, unpinAxis: false, valueFormat: !!null '',
         series: [{id: bigquery_data_access.number_of_queries, name: 'BigQuery Data
               Access: Query Statistics Number of Queries', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 171}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 159}]
+            __LINE_NUM: 131}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 128}]
     column_spacing_ratio:
     column_group_spacing_ratio:
     single_value_title: Scanned (TB)
@@ -196,14 +196,14 @@
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: 5,
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: bigquery_data_access_protopayload_auditlog_servicedata_v1_bigquery_job_completed_event_job_job_statistics.total_query_cost,
             name: 'BigQuery Data Access: Query Statistics Total Query Cost', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 248}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 236}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
+            __LINE_NUM: 197}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 195}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: 5, type: linear, unpinAxis: false, valueFormat: !!null '',
         series: [{id: bigquery_data_access.number_of_queries, name: 'BigQuery Data
               Access: Query Statistics Number of Queries', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 262}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 250}]
+            __LINE_NUM: 203}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 200}]
     column_spacing_ratio:
     column_group_spacing_ratio:
     listen:
@@ -266,14 +266,14 @@
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: 5,
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: bigquery_data_access_protopayload_auditlog_servicedata_v1_bigquery_job_completed_event_job_job_statistics.total_query_cost,
             name: 'BigQuery Data Access: Query Statistics Total Query Cost', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 337}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 325}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
+            __LINE_NUM: 267}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 265}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: 5, type: linear, unpinAxis: false, valueFormat: !!null '',
         series: [{id: bigquery_data_access.number_of_queries, name: 'BigQuery Data
               Access: Query Statistics Number of Queries', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 351}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 339}]
+            __LINE_NUM: 273}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 270}]
     column_spacing_ratio:
     column_group_spacing_ratio:
     single_value_title: Avg. Query Runtime (sec)
@@ -337,14 +337,14 @@
         showLabels: true, showValues: true, tickDensity: default, tickDensityCustom: 5,
         type: linear, unpinAxis: false, valueFormat: !!null '', series: [{id: bigquery_data_access_protopayload_auditlog_servicedata_v1_bigquery_job_completed_event_job_job_statistics.total_query_cost,
             name: 'BigQuery Data Access: Query Statistics Total Query Cost', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 513}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 501}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
+            __LINE_NUM: 338}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 336}, {label: !!null '', maxValue: !!null '', minValue: !!null '',
         orientation: right, showLabels: true, showValues: true, tickDensity: default,
         tickDensityCustom: 5, type: linear, unpinAxis: false, valueFormat: !!null '',
         series: [{id: bigquery_data_access.number_of_queries, name: 'BigQuery Data
               Access: Query Statistics Number of Queries', __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-            __LINE_NUM: 527}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
-        __LINE_NUM: 515}]
+            __LINE_NUM: 344}], __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 341}]
     column_spacing_ratio:
     column_group_spacing_ratio:
     listen:
@@ -510,18 +510,23 @@
       palette_id: ccba75a3-58c7-4b9c-a931-4ffc59e79cba
       options:
         steps: 5
+        __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml
+        __LINE_NUM: 512
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
     y_axes: [{label: !!null '', orientation: left, series: [{axisId: bigquery_data_access.number_of_queries,
-            id: bigquery_data_access.number_of_queries, name: Number of Queries}],
-        showLabels: false, showValues: true, maxValue: !!null '', minValue: !!null '',
-        valueFormat: !!null '', unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
-        type: linear}, {label: !!null '', orientation: right, series: [{axisId: bigquery_data_access_job_statistics.total_query_cost,
-            id: bigquery_data_access_job_statistics.total_query_cost, name: Total
-              Query Cost}], showLabels: false, showValues: false, maxValue: !!null '',
+            id: bigquery_data_access.number_of_queries, name: Number of Queries, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+            __LINE_NUM: 516}], showLabels: false, showValues: true, maxValue: !!null '',
         minValue: !!null '', valueFormat: !!null '', unpinAxis: false, tickDensity: default,
-        tickDensityCustom: 5, type: linear}]
+        tickDensityCustom: 5, type: linear, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 516}, {label: !!null '', orientation: right, series: [{axisId: bigquery_data_access_job_statistics.total_query_cost,
+            id: bigquery_data_access_job_statistics.total_query_cost, name: Total
+              Query Cost, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+            __LINE_NUM: 520}], showLabels: false, showValues: false, maxValue: !!null '',
+        minValue: !!null '', valueFormat: !!null '', unpinAxis: false, tickDensity: default,
+        tickDensityCustom: 5, type: linear, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 520}]
     show_y_axis_labels: true
     show_y_axis_ticks: true
     y_axis_tick_density: default
@@ -585,8 +590,10 @@
     show_view_names: false
     y_axes: [{label: '', orientation: left, series: [{axisId: bigquery_data_access_authentication_info.number_of_active_users,
             id: bigquery_data_access_authentication_info.number_of_active_users, name: Number
-              of Active Users}], showLabels: false, showValues: false, unpinAxis: false,
-        tickDensity: default, tickDensityCustom: 5, type: linear}]
+              of Active Users, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+            __LINE_NUM: 586}], showLabels: false, showValues: false, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear, __FILE: block-gcp-optimization/bigquery_audit.dashboard.lookml,
+        __LINE_NUM: 586}]
     show_y_axis_labels: true
     show_y_axis_ticks: true
     y_axis_tick_density: default
