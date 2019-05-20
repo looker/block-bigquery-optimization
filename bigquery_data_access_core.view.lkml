@@ -105,6 +105,7 @@ view: bigquery_data_access_core {
 
   measure: number_of_expensive_queries {
     view_label: "BigQuery Data Access: Query Statistics"
+    description: "Number of queries with over 30 billed gigabytes"
     type: count
     filters: {
       field: bigquery_data_access_job_statistics.billed_gigabytes
