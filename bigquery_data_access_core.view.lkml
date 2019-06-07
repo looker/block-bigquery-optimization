@@ -666,6 +666,22 @@ view: bigquery_data_access_query_table_definitions_core {
 }
 
 view: bigquery_data_access_query_core {
+
+  filter: query_text_filter {
+    type: string
+  }
+
+  dimension: query_text_selector {
+    type: string
+    case: {
+      when: {
+        sql: {% condition query_text_filter %} ${query} {% endcondition %} ;;
+        label: "Queries with Specified Pattern"
+      }
+      else: "All Other Queries"
+    }
+  }
+
   dimension: create_disposition {
     type: string
     sql: ${TABLE}.createDisposition ;;
