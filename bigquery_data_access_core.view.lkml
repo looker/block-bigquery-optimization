@@ -1,3 +1,105 @@
+include: "//@{CONFIG_PROJECT_NAME}/*.view.lkml"
+
+############## FINAL LAYER OF VIEWS ##############
+
+view: bigquery_data_access {
+  extends: [bigquery_data_access_config]
+}
+
+view: bigquery_data_access_resource {
+  extends: [bigquery_data_access_resource_config]
+}
+
+view: bigquery_data_access_resource_labels {
+  extends: [bigquery_data_access_resource_labels_config]
+}
+
+view: bigquery_data_access_http_request {
+  extends: [bigquery_data_access_http_request_config]
+}
+
+view: bigquery_data_access_source_location {
+  extends: [bigquery_data_access_source_location_config]
+}
+
+view: bigquery_data_access_operation {
+  extends: [bigquery_data_access_operation_config]
+}
+
+view: bigquery_data_access_request_metadata {
+  extends: [bigquery_data_access_request_metadata_config]
+}
+
+view: bigquery_data_access_authentication_info {
+  extends: [bigquery_data_access_authentication_info_config]
+}
+
+view: bigquery_data_authorization_info {
+  extends: [bigquery_data_authorization_info_config]
+}
+
+view: bigquery_data_access_payload {
+  extends: [bigquery_data_access_payload_config]
+}
+
+view: bigquery_data_access_table_data_list_request {
+  extends: [bigquery_data_access_table_data_list_request_config]
+}
+
+view: bigquery_data_access_job_completed_event {
+  extends: [bigquery_data_access_job_completed_event_config]
+}
+
+view: bigquery_data_access_job_name {
+  extends: [bigquery_data_access_job_name_config]
+}
+
+view: bigquery_data_access_job_status {
+  extends: [bigquery_data_access_job_status_config]
+}
+
+view: bigquery_data_access_job_status_error {
+  extends: [bigquery_data_access_job_status_error_config]
+}
+
+view: bigquery_data_access_job_statistics {
+  extends: [bigquery_data_access_job_statistics_config]
+}
+
+view: bigquery_data_access_job_configuration {
+  extends: [bigquery_data_access_job_configuration_config]
+}
+
+view: bigquery_data_access_query_destination_table {
+  extends: [bigquery_data_access_query_destination_table_config]
+}
+
+view: bigquery_data_access_query_table_definitions {
+  extends: [bigquery_data_access_query_table_definitions_config]
+}
+
+view: bigquery_data_access_query {
+  extends: [bigquery_data_access_query_config]
+}
+
+view: bigquery_data_access_query_default_dataset {
+  extends: [bigquery_data_access_query_default_dataset_config]
+}
+
+view: bigquery_data_access_protopayload_auditlog_status {
+  extends: [bigquery_data_access_protopayload_auditlog_status_config]
+}
+
+view: bigquery_data_access_servicedata {
+  extends: [bigquery_data_access_servicedata_config]
+}
+
+view: bigquery_data_access_job {
+  extends: [bigquery_data_access_job_config]
+}
+
+###################################################
+
 view: bigquery_data_access_core {
   derived_table: {
     sql:
