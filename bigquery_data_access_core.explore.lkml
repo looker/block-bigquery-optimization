@@ -1,4 +1,4 @@
-include: "bigquery_data_access_core.view.lkml"
+# include: "bigquery_data_access_core.view.lkml" # this include is not necessary when extendsion: required is in the explore def
 
 explore: bigquery_data_access_core {
   view_label: "BigQuery Data Access"
