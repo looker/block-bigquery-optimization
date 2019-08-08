@@ -1,5 +1,7 @@
 project_name: "block-bigquery-optimization"
 
+################ Constants ################
+
 constant: CONNECTION_NAME {
   value: "looker_application"
   export: override_required
@@ -10,7 +12,6 @@ constant: SCHEMA_NAME {
   export: override_required
 }
 
-# Make sure to include a note about having _* at the end to include all date partitioned tables
 constant: AUDIT_LOG_EXPORT_TABLE_NAME {
   value: "cloudaudit_googleapis_com_data_access_*"
   export: override_required
@@ -21,7 +22,16 @@ constant: CONFIG_PROJECT_NAME {
   export: override_required
 }
 
-# THIS'LL NEED TO BE CREATED AUTOMATICALLY DURING INSTALL, I BELIEVE
+################ Dependencies ################
+
 local_dependency: {
   project: "@{CONFIG_PROJECT_NAME}"
+
+  override_constant: SCHEMA_NAME {
+    value: "@{SCHEMA_NAME}"
+  }
+
+  override_constant: AUDIT_LOG_EXPORT_TABLE_NAME {
+    value: "@{AUDIT_LOG_EXPORT_TABLE_NAME}"
+  }
 }
