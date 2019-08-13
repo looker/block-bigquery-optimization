@@ -1,6 +1,6 @@
 project_name: "block-bigquery-optimization"
 
-################ Constants ################
+################# Constants #################
 
 constant: CONNECTION_NAME {
   value: "looker_application"
