@@ -38,3 +38,5 @@ Alternatively, if you have the Google Cloud SDK installed, you can set up the Bi
 ```
 gcloud beta logging sinks create <sink_name> bigquery.googleapis.com/projects/<project-name>/datasets/<dataset-name> --log-filter='resource.type="bigquery_resource"'
 ```
+
+Note: In order to make use of this block, you must create or have a connection to the GCP Project that holds your BigQuery audit logs. Details on how to create a new BigQuery connection in Looker can be found at [here](https://docs.looker.com/setup-and-management/database-config/google-bigquery).
