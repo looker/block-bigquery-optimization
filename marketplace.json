@@ -2,7 +2,7 @@
   "label": "Google BigQuery Performance",
   "category_label": "Tools",
   "branding": {
-    "image_uri": "https://wwwstatic-a.lookercdn.com/blocks/logos/datatonic_google_cloud.png",
+    "image_uri": "https://marketplace-api.looker.com/block-icons/google-cloud.png",
     "tagline": "This Block provides a comprehensive overview of all cost and performance data for one or multiple BQ projects, enabling users to effectively monitor BigQuery usage down to a per user level. It can be used to set up alerts to long running or high cost queries."
   },
 
