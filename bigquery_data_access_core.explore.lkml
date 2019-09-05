@@ -1,5 +1,4 @@
-# include: "bigquery_data_access_core.view.lkml" # this include is not necessary when extendsion: required is in the explore def
-
+# Core Data Access Explore
 explore: bigquery_data_access_core {
   view_label: "BigQuery Data Access"
   label: "BigQuery Data Access Logs"
