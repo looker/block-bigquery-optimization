@@ -40,3 +40,7 @@ gcloud beta logging sinks create <sink_name> bigquery.googleapis.com/projects/<p
 ```
 
 Note: In order to make use of this block, you must create or have a connection to the GCP Project that holds your BigQuery audit logs. Details on how to create a new BigQuery connection in Looker can be found at [here](https://docs.looker.com/setup-and-management/database-config/google-bigquery).
+
+### What if I find an error? Suggestions for improvements?
+
+Great! Blocks were designed for continuous improvement through the help of the entire Looker community and we'd love your input. To report an error or improvement recommendation, please reach out to Looker support via email to support@looker.com or via chat to submit a request. Please be as detailed as possible in your explanation and we'll address it as quick as we can.
