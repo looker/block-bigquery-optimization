@@ -16,10 +16,17 @@ Create a BigQuery dataset for the BigQuery audit logs. Go to the Google Cloud Pl
 
 To set up the BigQuery log export do the following in a project that contains BigQuery:
 
-1. Go to the Google Cloud Platform console and select **Stackdriver Logging**
-2. Click **Exports** and then **Create Export**
-3. Add a **Sink Name** and select **Custom Destination** as the **Sink Service**. The **Sink Destination** should be set to ```bigquery.googleapis.com/projects/<project-name>/datasets/<dataset-name>```, adding the project and dataset names you created earlier.
-4. Click **Create Sink**
+1. First, you need to add an empty dataset on BigQuery where the log will be exported. Go to the Google Cloud Platform console and select **BigQuery**
+2. Select your project and click on **Create Dataset**. Enter a name under "Dataset ID" (e.g. ```gcp_logs```) and click on Create Dataset
+1. You will now configure the BigQuery log to be explorted into that dataset. Go to the Google Cloud Platform console and select **Logging** (in the Operations suite)
+2. Click on **Logs Router** and then on **Create Sink**
+2. Click on the arrow on the right of the search box, and then on **"Convert to advanced filter"**
+3. In the new text box, type ```resource.type = bigquery_resource OR resource.type = bigquery_project OR resource.type = bigquery_dataset```
+4. Under "Edit Sink":
+  a. Under "Edit Name", enter a name (e.g. ```bigquery-sink-v1```)
+  b. Under "Sink Service", select **BigQuery Sink** and click the **Use Partitioned Tables** tickbox
+  c. Under "Sink Destination", select the BigQuery Dataset **that you created in step 2**
+  d. Click on **Create sink**
 
 If you got a permission error then that is perfectly normal. It is because the project you have set up the export to is different to the project you have set up the logging export in. In this case the **Service Account** which writes the logs into the **BigQuery** dataset you have created will not have permission to do so. Follow the steps below to complete the setup:
 
