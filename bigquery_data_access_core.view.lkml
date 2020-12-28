@@ -108,7 +108,7 @@ view: bigquery_data_access_core {
       FROM
         `@{SCHEMA_NAME}.@{AUDIT_LOG_EXPORT_TABLE_NAME}`
       WHERE
-        {% condition date_filter %} PARSE_TIMESTAMP('%E4Y%m%d', _TABLE_SUFFIX) {% endcondition %} ;;
+        {% condition date_filter %} timestamp {% endcondition %} ;;
   }
 
   filter: date_filter {
@@ -171,6 +171,7 @@ view: bigquery_data_access_core {
     sql: ${TABLE}.sourceLocation ;;
   }
 
+# this is the new partition fields
   dimension_group: timestamp {
     hidden: yes
     type: time
