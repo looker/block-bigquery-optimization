@@ -1,4 +1,5 @@
 - dashboard: bigquery_audit
+  preferred_viewer: dashboards-next
   title: BigQuery Audit
   layout: newspaper
   elements:

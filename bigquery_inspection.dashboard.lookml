@@ -1,4 +1,5 @@
 - dashboard: bigquery_inspection
+  preferred_viewer: dashboards-next
   title: BigQuery Inspection
   layout: newspaper
   elements:
