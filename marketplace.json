@@ -1,0 +1,39 @@
+{
+  "label": "Google BigQuery Performance",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/google-cloud.png",
+    "tagline": "This Block provides a comprehensive overview of all cost and performance data for one or multiple BQ projects, enabling users to effectively monitor BigQuery usage down to a per user level. It can be used to set up alerts to long running or high cost queries."
+  },
+
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "SCHEMA_NAME": {
+      "label": "Schema Name"
+    },
+    "AUDIT_LOG_EXPORT_TABLE_NAME": {
+      "label": "Audit Log Export Table Name",
+      "description": "The table name of your BQ Audit data sink."
+    },
+    "CONFIG_PROJECT_NAME": {
+      "label": "Config Project Name"
+    }
+  },
+  "models": [
+    {
+      "name": "block_bigquery_optimization",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ],
+  "auxiliary_projects": [
+    {
+      "git_uri": "git://github.com/looker/block-bigquery-optimization-config.git",
+      "git_ref": "f7910c9c378fbdc753884a797f06d4eec1ae11f4",
+      "label": "Google BigQuery Performance Config",
+      "constant_name": "CONFIG_PROJECT_NAME"
+    }
+  ]
+}
