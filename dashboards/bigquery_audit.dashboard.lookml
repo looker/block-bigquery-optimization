@@ -5,7 +5,7 @@
   elements:
   - title: Successful Queries
     name: Successful Queries
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access.number_of_queries]
@@ -76,7 +76,7 @@
     height: 3
   - title: Failed Queries
     name: Failed Queries
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access.number_of_queries]
@@ -147,7 +147,7 @@
     height: 3
   - title: Total Cost
     name: Total Cost
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.total_query_cost]
@@ -217,7 +217,7 @@
     height: 3
   - title: Data Scanned
     name: Data Scanned
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.total_billed_terabytes]
@@ -288,7 +288,7 @@
     height: 3
   - title: Queries > 30 GB
     name: Queries > 30 GB
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access.number_of_expensive_queries]
@@ -317,7 +317,7 @@
     height: 3
   - title: Avg Query Runtime
     name: Avg Query Runtime
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.average_query_runtime]
@@ -388,7 +388,7 @@
     height: 3
   - title: Most Expensive Queries (> 30GB scanned)
     name: Most Expensive Queries (> 30GB scanned)
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: table
     fields: [bigquery_data_access_authentication_info.user_id, bigquery_data_access_resource_labels.project_id,
@@ -424,7 +424,7 @@
     height: 8
   - title: Query Cost
     name: Query Cost
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: looker_line
     fields: [bigquery_data_access.number_of_queries, bigquery_data_access_job_statistics.total_query_cost,
@@ -505,7 +505,7 @@
     height: 9
   - title: Active Users
     name: Active Users
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: looker_column
     fields: [bigquery_data_access_authentication_info.number_of_active_users, bigquery_data_access_job_statistics.start_date]
@@ -563,7 +563,7 @@
     height: 7
   - title: Highest Cost Users
     name: Highest Cost Users
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: table
     fields: [bigquery_data_access_authentication_info.user_id, bigquery_data_access_job_statistics.total_billed_gigabytes,
@@ -598,7 +598,7 @@
     height: 8
   - title: Highest Cost Projects
     name: Highest Cost Projects
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: table
     fields: [bigquery_data_access_job_statistics.total_billed_gigabytes, bigquery_data_access_job_statistics.average_billed_gigabytes,
@@ -638,7 +638,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_resource_labels.project_id
@@ -648,7 +648,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_authentication_info.user_id
@@ -658,7 +658,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_authentication_info.is_service_account
@@ -668,7 +668,7 @@
     default_value: 30 days
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_job_statistics.start_date

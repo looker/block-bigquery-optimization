@@ -5,7 +5,7 @@
   elements:
   - title: Avg Runtime
     name: Avg Runtime
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.average_query_runtime, bigquery_data_access_query.query_text_selector]
@@ -82,7 +82,7 @@
     height: 4
   - title: Total Cost
     name: Total Cost
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.total_query_cost, bigquery_data_access_query.query_text_selector]
@@ -163,7 +163,7 @@
     height: 4
   - title: Query Detail
     name: Query Detail
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: table
     fields: [bigquery_data_access_query.query, bigquery_data_access_query_destination_table.dataset_id,
@@ -240,7 +240,7 @@
     height: 8
   - title: Failed Vs Successful
     name: Failed Vs Successful
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: looker_pie
     fields: [bigquery_data_access.number_of_queries, bigquery_data_access_job_status.query_failed]
@@ -322,7 +322,7 @@
     height: 4
   - title: Number of Queries
     name: Number of Queries
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access.number_of_queries, bigquery_data_access_query.query_text_selector]
@@ -410,7 +410,7 @@
     height: 4
   - title: Scanned TB
     name: Scanned TB
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: single_value
     fields: [bigquery_data_access_job_statistics.total_billed_terabytes, bigquery_data_access_query.query_text_selector]
@@ -491,7 +491,7 @@
     height: 4
   - title: Queries Over Time
     name: Queries Over Time
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     type: looker_column
     fields: [bigquery_data_access.number_of_queries, bigquery_data_access_job_statistics.start_date]
@@ -571,7 +571,7 @@
     default_value: 4 weeks
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_job_statistics.start_date
@@ -581,7 +581,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: block_bigquery_optimization
+    model: block_bigquery_optimization_v2
     explore: bigquery_data_access
     listens_to_filters: []
     field: bigquery_data_access_query.query_text_filter

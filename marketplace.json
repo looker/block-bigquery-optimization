@@ -24,7 +24,7 @@
   },
   "models": [
     {
-      "name": "block_bigquery_optimization",
+      "name": "block_bigquery_optimization_v2",
       "connection_constant": "CONNECTION_NAME"
     }
   ],

@@ -1,8 +1,7 @@
-# Core Data Access Explore
-explore: bigquery_data_access_core {
+include:"/views/*view.lkml"
+explore: bigquery_data_access {
   view_label: "BigQuery Data Access"
   label: "BigQuery Data Access Logs"
-  extension: required
 
   always_filter: {
     filters: {
