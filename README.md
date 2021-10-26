@@ -41,7 +41,7 @@ The BigQuery audit log export should now be set up. The table will be updated th
 If you have more than one project using BigQuery, repeat the steps above. All logs from different projects will be added to the same table, allowing easy querying across projects.
 
 ### !IMPORTANT!
-The BigQuery Audit Logs export pulls in both the AuditData and BigQueryAuditMetadata logs. AuditData is the older version of the logs, and BigQueryAuditMetadata is the new which ADDS new columns. These are therefore unioned in the table. The lookml model pulls from the older version, but you have the ability to model the new columns into the model should you wish.
+The BigQuery Audit Logs export pulls in both the AuditData and BigQueryAuditMetadata logs. AuditData is the older version of the logs, and BigQueryAuditMetadata is the new which ADDS new columns. These are therefore unioned in the table. The lookml model pulls from the older version, but you have the ability to model the new columns into the model should you wish. (See Customization)
 You should only use ROW COUNT with Method Name filter applied.
 
 #### Using the Google Cloud SDK
@@ -53,3 +53,7 @@ gcloud beta logging sinks create <sink_name> bigquery.googleapis.com/projects/<p
 
 Note: In order to make use of this block, you must create or have a connection to the GCP Project that holds your BigQuery audit logs. Details on how to create a new BigQuery connection in Looker can be found at [here](https://docs.looker.com/setup-and-management/database-config/google-bigquery).
 
+
+#### Customization
+- This block uses refinements for customization. For more information on using refinements to customize marketplace blocks, please see [this link](https://docs.looker.com/data-modeling/marketplace/customize-blocks#marketplace_blocks_that_use_refinements).
+- Refinements can be used to add new content or modify existing content without the need to copy individual LookML elements into a new project.
